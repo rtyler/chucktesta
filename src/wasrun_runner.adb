@@ -7,7 +7,6 @@ use Ada.Text_IO;
 procedure WasRun_Runner is
     WasRunTest : WasRun.WTestCase;
 begin
-    Put_Line ("Starting WasRun Runner");
     WasRunTest.Set_Method (WasRun.Test_Method'Access);
     WasRunTest.Print_WasRun;
     WasRunTest.Run;
