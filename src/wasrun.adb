@@ -5,9 +5,9 @@ use Ada.Text_IO;
 
 package body WasRun is
 
-    procedure Test_Method (T : in TestCase) is
+    procedure Test_Method (T : in out TestCase) is
     begin
-        null;
+        T.WasRun := True;
     end Test_Method;
 
     procedure Print_WasRun(T : in TestCase) is
