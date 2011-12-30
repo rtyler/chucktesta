@@ -9,6 +9,6 @@ procedure WasRun_Runner is
 begin
     Put_Line ("Starting WasRun Runner");
     WasRunTest.Print_WasRun;
-    WasRunTest.Test_Method;
+    WasRunTest.Run;
     WasRunTest.Print_WasRun;
 end WasRun_Runner;

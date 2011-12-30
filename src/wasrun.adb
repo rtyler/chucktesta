@@ -4,6 +4,10 @@ with Ada.Text_IO;
 use Ada.Text_IO;
 
 package body WasRun is
+    procedure Run (T : in out TestCase) is
+    begin
+        T.Test_Method;
+    end Run;
 
     procedure Test_Method (T : in out TestCase) is
     begin
