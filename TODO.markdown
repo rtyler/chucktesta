@@ -7,3 +7,4 @@
 * Invoke tearDown even if the test method fails
 * Run multiple tests
 * Report collected results
+* Handle not setting test method
