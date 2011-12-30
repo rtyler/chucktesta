@@ -6,7 +6,7 @@ use Ada.Text_IO;
 package body WasRun is
 
     procedure Test_Method (T : in out Testa.TestCase'Class) is
-        WTest : WTestCase := WTestCase (T);
+        WTest : WTestCase renames WTestCase (T);
     begin
         WTest.WasRun := True;
     end Test_Method;
