@@ -5,10 +5,10 @@ use Ada.Text_IO;
 
 package body WasRun is
 
-    procedure Test_Method (T : in out WTestCase) is
+    procedure Test_Method (T : in out Testa.TestCase'Class) is
+        WTest : WTestCase := WTestCase (T);
     begin
-        null;
-        -- T.WasRun := True;
+        WTest.WasRun := True;
     end Test_Method;
 
     procedure Print_WasRun(T : in WTestCase) is

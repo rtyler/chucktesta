@@ -1,7 +1,7 @@
 
 package Testa is
     type TestCase is tagged private;
-    type Test_Method_Type is access procedure (T : in out TestCase);
+    type Test_Method_Type is access procedure (T : in out TestCase'Class);
 
     procedure Set_Method (T : in out TestCase;
                           M : in Test_Method_Type);
